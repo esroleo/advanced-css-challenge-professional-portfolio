@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header nav ul li {
+    color: brown;
+    padding: 10px 15px;
+    /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
+    font-size: 1.55vw;
+    font-size: 20px;
+    
+}
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* this will be applied on any screen smaller than 980px */
+@media screen and (max-width: 980px) {
+
+
+
+  }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* this will be applied on any screen smaller than 768px */
+@media screen and (max-width: 768px) {
+    
+
+
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+   /* this will be applied on any screen smaller than 575px */
+  @media screen and (max-width: 575px) {
+
+
+    }
