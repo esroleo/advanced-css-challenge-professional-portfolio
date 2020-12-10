@@ -1,8 +1,19 @@
+/* Remove default html margin, padding and assign box-sizinz as border-box*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+/* Start of CSS FLEX Header code */
+
+body{
+  background-color: lightgray;
+}
+
 
 header {
     padding: 20px 35px;
@@ -29,6 +40,60 @@ header nav ul li {
     font-size: 20px;
     
 }
+
+/* End of header code */
+
+/* CSS Flex/Grid Footer Code */
+
+.footer-wrapper {
+  display: flex;
+  /*width: 100%;*/
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.footer-container {
+  width: 80%;
+  display: grid;
+  /*create a 6X3 grid. */
+  grid-template-columns: 1fr repeat(3, 2fr);
+  grid-template-rows: repeat(3,2fr);
+  gap: 20px 20px;
+  
+  
+}
+
+.footer-grid-item {
+  text-align: center;
+  
+}
+
+.footer-grid-item.contact-me {
+  padding-top: 10px;
+  font-size: 35px;
+  grid-row: 1 / span 3;
+  padding-right: 10px;
+  border-right: 2px solid coral;
+}
+
+.footer-grid-item.phone{
+  grid-row: 2
+}
+
+.footer-grid-item.email{
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.footer-grid-item.git-hub{
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+
+
+/* End of CSS Flex/Grid Footer Code */
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
