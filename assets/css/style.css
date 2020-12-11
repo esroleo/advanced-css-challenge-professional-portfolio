@@ -50,6 +50,7 @@ header nav ul li {
     /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
     font-size: 1.55vw;
     font-size: 20px;
+    /* Match the Header h1 element on the flex container span element*/
     margin-top: 5px;
     margin-bottom: 10px;
     
@@ -63,6 +64,16 @@ header a {
 }
 
 /* End of header code */
+
+/* Start of semantic footer code */
+
+footer a {
+  text-decoration: none;
+  border-bottom: 2px solid #333366;
+  color:  #333366;
+}
+
+/* End of semantic footer code */
 
 /* Start of hero section with background */
 
@@ -178,6 +189,7 @@ header a {
 }
 
 .span-background.title { /* Move away from the top/bottom container*/
+  /* Match the header Nav element on the flex container elements*/
   margin-top: 5px;
   margin-bottom: 10px;
 
@@ -262,7 +274,7 @@ header a {
 
 /* End of FLEX CSS Main body code Work projects*/
 
-/* CSS Flex/Grid Footer Code */
+/* CSS Flex/Grid Footer non-semantic Code */
 
 .footer-wrapper {
   display: flex;
@@ -308,7 +320,7 @@ header a {
   grid-row: 2 / span 1;
 }
 
-/* End of CSS Flex/Grid Footer Code */
+/* End of CSS Flex/Grid Footer non-semantic Code */
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
