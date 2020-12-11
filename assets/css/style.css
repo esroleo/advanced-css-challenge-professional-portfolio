@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ 
 }
 
 /* Smoth Scrolling effect */
@@ -11,9 +13,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-
-
 
 /* Start of CSS FLEX Header code */
 
@@ -61,16 +60,29 @@ header a {
   text-decoration: none;
   border-bottom: 2px solid lightskyblue;
   color: lightskyblue;
+ 
 }
 
 /* End of header code */
 
 /* Start of semantic footer code */
 
+footer {
+  background-color: #404040;
+  color: lightskyblue;
+}
+
 footer a {
   text-decoration: none;
+  border-bottom: 2px solid lightskyblue;
+  color: lightskyblue;
+ 
+  /*
   border-bottom: 2px solid #333366;
   color:  #333366;
+  */
+  font-size: large;
+  font-weight: bold;
 }
 
 /* End of semantic footer code */
@@ -86,7 +98,7 @@ footer a {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-position: 30%;
+  background-position: 1%;
   display: flex;
   justify-content: flex-end;
   /* Will define later as required    */
@@ -186,13 +198,13 @@ footer a {
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 5%;
+  opacity: .8;
 }
 
 .span-background.title { /* Move away from the top/bottom container*/
   /* Match the header Nav element on the flex container elements*/
   margin-top: 5px;
   margin-bottom: 10px;
-
 }
 
 .span-background.lower-text {
@@ -303,7 +315,7 @@ footer a {
   grid-row: 1 / span 3;
   text-align: right;
   padding-right: 10px;
-  border-right: 2px solid #333366;
+  border-right: 2px solid lightskyblue;
 }
 
 .footer-grid-item.phone{
