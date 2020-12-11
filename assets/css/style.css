@@ -128,8 +128,8 @@ header nav ul li {
   background-color: lightskyblue;
   position: relative;
   line-height: 1.5;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .lower-text {
@@ -143,34 +143,66 @@ header nav ul li {
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 15px;
-  padding-bottom: 70px;
+  padding-left: 0px;
+  padding-bottom: 15px;
   text-align: left;
 }
 
 .work-item-project.run-buddy {
   grid-column: 3 /span 1;
   grid-row: 12 / span 4;
+  background-image: url("../images/run-buddy-project.JPG");
+  background-size: cover;
+  display: flex; /*Flex required to move the element as flex */
+  align-items: flex-end; /*Allow text to be at center of grid*/
+  padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
 }
 
 
 .work-item-project.placeholder1 {
   grid-column: 2 / span 1;
   grid-row: 12 / span 4; 
+  background-image: url("../images/pexels-luizclas-556665.jpg");
+  background-size: cover;
+  display: flex; /*Flex required to move the element as flex */
+  align-items: flex-end; /*Allow text to be at center of grid*/
+  padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
+  
 }
 
 .work-item-project.placeholder2 {
   grid-column: 4 / span 1;
   grid-row: 1 / span 6;
+  background-image: url("../images/pexels-luizclas-556665.jpg");
+  background-size: cover;
+  display: flex; /*Flex required to move the element as flex */
+  align-items: flex-end; /*Allow text to be at center of grid*/
+  padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
 }
 
 .work-item-project.placeholder3 {
   grid-column: 4 / span 1;
   grid-row: 7 / span 5;
+  background-image: url("../images/pexels-luizclas-556665.jpg");
+  background-size: cover;
+  display: flex; /*Flex required to move the element as flex */
+  align-items: flex-end; /*Allow text to be at center of grid*/
+  padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
 }
 
 .work-item-project.ghost-item {
   grid-column: 4 / span 1;
+  /* Hide Text */
+  opacity: 0;
+  
   
 }
 
