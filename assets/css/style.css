@@ -13,6 +13,8 @@ html {
 }
 
 
+
+
 /* Start of CSS FLEX Header code */
 
 body{
@@ -27,6 +29,11 @@ header {
     flex-wrap: wrap;
     list-style: none;
     background-color: #404040;
+
+}
+
+header h1 {
+  padding-left: 50px;
 }
 
 header nav ul {
@@ -36,8 +43,6 @@ header nav ul {
     align-items: center;
     list-style: none;
     padding-right: 60px;
-    
-  
 }
 
 header nav ul li {
@@ -45,6 +50,8 @@ header nav ul li {
     /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
     font-size: 1.55vw;
     font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     
 }
 
@@ -52,8 +59,7 @@ header nav ul li {
 header a {
   text-decoration: none;
   border-bottom: 2px solid lightskyblue;
-  color: lightskyblue;;
-  
+  color: lightskyblue;
 }
 
 /* End of header code */
@@ -171,8 +177,10 @@ header a {
   border-radius: 5%;
 }
 
-.span-background.title {
-  font: 50px;
+.span-background.title { /* Move away from the top/bottom container*/
+  margin-top: 5px;
+  margin-bottom: 10px;
+
 }
 
 .span-background.lower-text {
