@@ -16,11 +16,12 @@ body{
 
 
 header {
-    padding: 20px 35px;
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
+    background-color: #404040;
 }
 
 header nav ul {
@@ -29,16 +30,25 @@ header nav ul {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    padding-right: 60px;
     
+  
 }
 
 header nav ul li {
-    color: brown;
     padding: 10px 15px;
     /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
     font-size: 1.55vw;
     font-size: 20px;
     
+}
+
+/* Remove text anchor default decoreations */
+header a {
+  text-decoration: none;
+  border-bottom: 2px solid lightskyblue;
+  color: lightskyblue;;
+  
 }
 
 /* End of header code */
@@ -99,7 +109,7 @@ header nav ul li {
   grid-row: 1 / span 4;
   padding-right: 10px;
   text-align: right;
-  border-right: 2px solid coral;
+  border-right: 2px solid #333366;
 }
 
 .about-me-item.p1 {
@@ -145,7 +155,7 @@ header nav ul li {
   grid-row: 1 / span 15;
   text-align: right;
   padding-right: 10px;
-  border-right: 2px solid coral;
+  border-right: 2px solid #333366;
 }
 
 /* Apply background to any span with this class name */
@@ -158,8 +168,12 @@ header nav ul li {
   border-radius: 5%;
 }
 
-.lower-text {
-  font-size: small;
+.span-background.title {
+  font: 50px;
+}
+
+.span-background.lower-text {
+  font-size: x-small;
 }
 
 .work-item-project.challenge-1-refactor {
@@ -266,7 +280,7 @@ header nav ul li {
   grid-row: 1 / span 3;
   text-align: right;
   padding-right: 10px;
-  border-right: 2px solid coral;
+  border-right: 2px solid #333366;
 }
 
 .footer-grid-item.phone{
