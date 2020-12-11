@@ -43,9 +43,33 @@ header nav ul li {
 
 /* End of header code */
 
-/* Start of semantic Footer code */
+/* Start of hero section with background */
 
-/* End of semantic Footer code */
+.hero {
+  height: 300px;
+  background-image: url("../images/Toronto-night.jpg");
+  /* border-radious bottom sides with bottom border changed also*/
+  border-bottom-left-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 30%;
+  display: flex;
+  justify-content: flex-end;
+  /* Will define later as required    */
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.hero-subtitle {
+  padding-bottom: 15px;
+  padding-right: 15px;
+ 
+}
+
+
 
 /* Start of FLEX CSS Main body code About Me*/
 
@@ -92,6 +116,7 @@ header nav ul li {
 
 /* End of FLEX CSS Main body code About me*/
 
+
 /* Start of FLEX CSS Main body code Work projects*/
 
 .work-wrapper {
@@ -130,6 +155,7 @@ header nav ul li {
   line-height: 1.5;
   padding-left: 8px;
   padding-right: 8px;
+  border-radius: 5%;
 }
 
 .lower-text {
@@ -164,6 +190,7 @@ header nav ul li {
 .work-item-project.placeholder1 {
   grid-column: 2 / span 1;
   grid-row: 12 / span 4; 
+  /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
@@ -177,8 +204,10 @@ header nav ul li {
 .work-item-project.placeholder2 {
   grid-column: 4 / span 1;
   grid-row: 1 / span 6;
+  /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
   background-size: cover;
+  background-position: 30%;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
   padding-left: 0px;
@@ -189,6 +218,7 @@ header nav ul li {
 .work-item-project.placeholder3 {
   grid-column: 4 / span 1;
   grid-row: 7 / span 5;
+  /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
@@ -203,10 +233,7 @@ header nav ul li {
   /* Hide Text */
   opacity: 0;
   
-  
 }
-
-
 
 /* End of FLEX CSS Main body code Work projects*/
 
