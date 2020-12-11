@@ -43,10 +43,13 @@ header nav ul li {
 
 /* End of header code */
 
-/* Start of FLEX CSS Main body code */
+/* Start of semantic Footer code */
+
+/* End of semantic Footer code */
+
+/* Start of FLEX CSS Main body code About Me*/
 
 .about-me-wrapper {
-  background-color: darkcyan;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -55,14 +58,14 @@ header nav ul li {
 }
 
 
-.about-me-container {/*CSS Grid*/
+.about-me-grid-container {/*CSS Grid*/
   width: 80%;
   display: grid;
   /* Create a 6X4 grid. */
-  grid-template-columns: 1fr repeat(2, 3fr);
+  grid-template-columns: 1fr repeat(3, 2fr);
   grid-template-rows: repeat(4, 1fr);
   /* Gap on x and y grid */
-  gap: 20px 20px; 
+  gap: 10px 10px; 
 }
 
 /* Target the about me text only */
@@ -75,7 +78,105 @@ header nav ul li {
   border-right: 2px solid coral;
 }
 
-/* End of FLEX CSS Main body code */
+.about-me-item.p1 {
+  padding-left: 10px;
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.about-me-item.p2 {
+  padding-left: 10px;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 2;
+}
+
+/* End of FLEX CSS Main body code About me*/
+
+/* Start of FLEX CSS Main body code Work projects*/
+
+.work-wrapper {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.work-grid-container {/*CSS Grid*/
+  width: 80%;
+  display: grid;
+  /* Create a 6X8 grid. */
+  grid-template-columns: 1fr repeat(3, 2fr);
+  grid-template-rows: repeat(15, 1fr);
+  /* Gap on x and y grid */
+  gap: 10px 10px; 
+}
+
+.work-item.work-title {
+  padding-top: 10px;
+  font-size: 35px;
+  grid-row: 1 / span 15;
+  text-align: right;
+  padding-right: 10px;
+  border-right: 2px solid coral;
+}
+
+/* Apply background to any span with this class name */
+.span-background {
+  background-color: lightskyblue;
+  position: relative;
+  line-height: 1.5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.lower-text {
+  font-size: small;
+}
+
+.work-item-project.challenge-1-refactor {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 11;
+  background-image: url("../images/challeng-1-refactor-code.JPG");
+  background-size: cover;
+  display: flex; /*Flex required to move the element as flex */
+  align-items: flex-end; /*Allow text to be at center of grid*/
+  padding-left: 15px;
+  padding-bottom: 70px;
+  text-align: left;
+}
+
+.work-item-project.run-buddy {
+  grid-column: 3 /span 1;
+  grid-row: 12 / span 4;
+}
+
+
+.work-item-project.placeholder1 {
+  grid-column: 2 / span 1;
+  grid-row: 12 / span 4; 
+}
+
+.work-item-project.placeholder2 {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 6;
+}
+
+.work-item-project.placeholder3 {
+  grid-column: 4 / span 1;
+  grid-row: 7 / span 5;
+}
+
+.work-item-project.ghost-item {
+  grid-column: 4 / span 1;
+  
+}
+
+
+
+/* End of FLEX CSS Main body code Work projects*/
 
 /* CSS Flex/Grid Footer Code */
 
