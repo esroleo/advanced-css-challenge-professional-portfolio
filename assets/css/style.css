@@ -57,6 +57,10 @@ header nav ul li {
 
 /* Remove text anchor default decoreations */
 header a {
+  /* Longer bootom border under the element as mockup */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
   text-decoration: none;
   border-bottom: 2px solid lightskyblue;
   color: lightskyblue;
@@ -95,10 +99,12 @@ footer a {
   /* border-radious bottom sides with bottom border changed also*/
   border-bottom-left-radius: 30px 30px;
   border-bottom-right-radius: 30px 30px;
+  /* Image will cover the background */
   background-size: cover;
-  background-position: center;
+  /* Aligned the image to show the top of the tower*/
+  background-position:  100% 13%;
+  /* Scroll with the page effect reversed */
   background-attachment: fixed;
-  background-position: 1%;
   display: flex;
   justify-content: flex-end;
   /* Will define later as required    */
@@ -205,6 +211,13 @@ footer a {
   /* Match the header Nav element on the flex container elements*/
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+/* Here section cool subtitle with opacity of 1 */
+/* It needs to be adjusted to avoid belending with background */
+.span-background.opacity{
+  opacity: 1;
+  font-size: 30px;
 }
 
 .span-background.lower-text {
