@@ -667,7 +667,7 @@ header h1 {
     text-align: center;
     /*background-attachment: fixed does not work in mobiles as of now */
     /* similar function */
-    background-position: scroll 
+    background-position: scroll;
 
     
 
@@ -686,7 +686,7 @@ header h1 {
     */
     align-items: flex-end;
     text-align: center;
-    background-position: scroll 
+    background-position: scroll;
   }
   
   
@@ -728,7 +728,7 @@ header h1 {
     text-align: left;
     */
     /*background-attachment: fixed;*/
-    background-position: scroll 
+    background-position: scroll;
     text-align: center;
   }
   
@@ -760,7 +760,7 @@ header h1 {
     align-items: center; /*Allow text to be at center of grid*/
     opacity: 1;
     /*background-attachment: fixed;*/
-    background-position: scroll ;
+    background-position: scroll;
     text-align: center;
 }
 
