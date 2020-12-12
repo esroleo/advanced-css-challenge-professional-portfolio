@@ -333,17 +333,21 @@ footer a {
 }
 
 .footer-grid-item.phone{
-  grid-row: 2
+  /* Grid knows the order to put the elements if only defined on location */
+  grid-row: 2;
+
 }
 
 .footer-grid-item.email{
-  grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 2;
+  
+
 }
 
 .footer-grid-item.git-hub{
-  grid-column: 4 / span 1;
-  grid-row: 2 / span 1;
+  grid-row: 2;
+
+  
 }
 
 /* End of CSS Flex/Grid Footer non-semantic Code */
@@ -354,25 +358,126 @@ footer a {
 @media screen and (max-width: 1024) {
 
   
+/* Start of header smaller resolution code */
+/* Arranging items in columns of one element */
+/* Note that hero and work sections did not need any changes at this resolution */
+
+
+/* Start of header smaller screen code changes */
+
 header {
-    justify-content: center;
+  justify-content: center;
 }
 
 header h1 {
-  /* At smaller screens remove space at left of h1 on header */
-  padding-left: 0px;
+/* At smaller screens remove space at left of h1 on header */
+padding-left: 0px;
+}
+
+/* End of header smaller screen code chnages */
+
+/* Start of about me grid smaller screen code changes */
+.about-me-wrapper {
+margin-top: 20px;
+}
+
+.about-me-grid-container {/*CSS Grid*/
+/* Create a 3X6 grid for smaler screen */
+grid-template-columns: repeat(3, 2fr);
+grid-template-rows: repeat(5, 1fr);
+/* Gap on x and y grid */
+gap: 5px 5px; 
+}
+
+/* Target the about me text only */
+.about-me-item.about-me-title {
+padding-top: 0px;
+font-size: 25px;
+grid-column: 1 / span 3;
+grid-row: 1 / span 1;
+padding-bottom: 5px;
+text-align: center;
+border-right: none;
+border-bottom: 2px solid #333366;
+}
+
+.about-me-item.p1 {
+padding-top: 5px;
+grid-column: 1 / span 3;
+grid-row: 2 / span 2;
+}
+
+.about-me-item.p2 {
+padding-top: 5px;
+grid-column: 1 / span 3;
+grid-row: 4 / span 2;
+/* Push away the work container from the about me grid containter */
+padding-bottom: 10px;
+}
+
+/* End of about me grid smaller screen code changes */
+
+
+/* Start of footer grid smaller screen code changes */
+
+.footer-wrapper {
+margin-top: 20px;
+}
+
+.footer-container {
+
+/* Create a 3X6 grid for smaler screen */
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+/* Gap on x and y grid */
+gap: 2.5px 2.5px; 
+}
+
+.footer-grid-item.contact-me {
+padding-top: 0px;
+font-size: 25px;
+grid-column: 1 / span 3;
+grid-row: 1 / span 1;
+text-align: center;
+padding-right: 0px;
+padding-bottom: 0px;
+border-right: none;
+border-bottom: 2px solid lightskyblue;
+}
+
+.footer-grid-item.phone{
+/* Grid knows the order to put the elements if only defined on location */
+grid-column: 1 / span 1;
+grid-row: 2 / span 2;
+align-self: center;
+}
+
+.footer-grid-item.email{
+
+grid-column: 2 span 1;
+grid-row: 2 / span 2;
+align-self: center;
+}
+
+.footer-grid-item.git-hub{
+
+grid-column: 3 span 1;
+grid-row: 2 / span 2;
+align-self: center;
+
 }
 
 }
-
-
-
-
-
-
 
 /* this will be applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
+
+/* Start of header smaller resolution code */
+/* Arranging items in columns of one element */
+/* Note that hero and work sections did not need any changes at this resolution */
+
+
+/* Start of header smaller screen code changes */
 
   header {
     justify-content: center;
@@ -383,10 +488,12 @@ header h1 {
   padding-left: 0px;
 }
 
+/* End of header smaller screen code chnages */
+
+/* Start of about me grid smaller screen code changes */
 .about-me-wrapper {
   margin-top: 20px;
 }
-
 
 .about-me-grid-container {/*CSS Grid*/
   /* Create a 3X6 grid for smaler screen */
@@ -422,8 +529,64 @@ header h1 {
   padding-bottom: 10px;
 }
 
+/* End of about me grid smaller screen code changes */
+
+
+/* Start of footer grid smaller screen code changes */
+
+.footer-wrapper {
+  margin-top: 20px;
+}
+
+.footer-container {
+
+  /* Create a 3X6 grid for smaler screen */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* Gap on x and y grid */
+  gap: 2.5px 2.5px; 
+}
+
+.footer-grid-item.contact-me {
+  padding-top: 0px;
+  font-size: 25px;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  text-align: center;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  border-right: none;
+  border-bottom: 2px solid lightskyblue;
+}
+
+.footer-grid-item.phone{
+  /* Grid knows the order to put the elements if only defined on location */
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
+}
+
+.footer-grid-item.email{
+  
+  grid-column: 2 span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
+}
+
+.footer-grid-item.git-hub{
+  
+  grid-column: 3 span 1;
+  grid-row: 2 / span 2;
+  align-self: center;
 
 }
+
+}
+
+
+/* End of footer grid smaller screen code changes */
+  
+
 
 
 
