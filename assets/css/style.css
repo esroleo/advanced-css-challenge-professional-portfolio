@@ -621,7 +621,7 @@ header h1 {
   }
 
   .work-wrapper {
-    margin-top: 0px;
+    margin-top: 15px;
   
   }
   
@@ -746,7 +746,6 @@ header h1 {
     grid-row: 10 / span 1;
     background-image: url("../images/pexels-luizclas-556665.jpg");
     background-size: cover;
-    background-position:  100% 75%;
     display: flex; /*Flex required to move the element as flex */
     align-items: center; /*Allow text to be at center of grid*/
     opacity: 1;
@@ -776,12 +775,7 @@ header h1 {
     list-style: none;
     padding-right: 60px;
     */
-  
-
-
 }
-
-
 
 
 
@@ -811,7 +805,6 @@ header h1 {
       padding-left: 5vw;
 
     }
-
    
 
   }
