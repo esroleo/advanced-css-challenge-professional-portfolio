@@ -32,6 +32,7 @@ header {
 }
 
 header h1 {
+  /* At bigger screens create space at left of h1 on header */
   padding-left: 50px;
 }
 
@@ -348,16 +349,87 @@ footer a {
 /* End of CSS Flex/Grid Footer non-semantic Code */
 
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* Media queries for smaller than desktop screens */
+
+@media screen and (max-width: 1024) {
+
+  
+header {
+    justify-content: center;
+}
+
+header h1 {
+  /* At smaller screens remove space at left of h1 on header */
+  padding-left: 0px;
+}
+
+}
+
+
+
+
+
+
+
 /* this will be applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
 
+  header {
+    justify-content: center;
+}
+
+header h1 {
+  /* At smaller screens remove space at left of h1 on header */
+  padding-left: 0px;
+}
+
+.about-me-wrapper {
+  margin-top: 20px;
+}
 
 
-  }
+.about-me-grid-container {/*CSS Grid*/
+  /* Create a 3X6 grid for smaler screen */
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(5, 1fr);
+  /* Gap on x and y grid */
+  gap: 5px 5px; 
+}
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-/* this will be applied on any screen smaller than 768px */
+/* Target the about me text only */
+.about-me-item.about-me-title {
+  padding-top: 0px;
+  font-size: 25px;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  padding-bottom: 5px;
+  text-align: center;
+  border-right: none;
+  border-bottom: 2px solid #333366;
+}
+
+.about-me-item.p1 {
+  padding-top: 5px;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+}
+
+.about-me-item.p2 {
+  padding-top: 5px;
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 2;
+  /* Push away the work container from the about me grid containter */
+  padding-bottom: 10px;
+}
+
+
+}
+
+
+
+
+
+/* This will be applied on any screen smaller than 768px */
 @media screen and (max-width: 768px) {
     
 
@@ -365,8 +437,10 @@ footer a {
 
   }
   
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-   /* this will be applied on any screen smaller than 575px */
+
+
+
+   /* This will be applied on any screen smaller than 575px */
   @media screen and (max-width: 575px) {
 
 
