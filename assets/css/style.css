@@ -469,7 +469,6 @@ align-self: center;
 grid-column: 3 span 1;
 grid-row: 2 / span 2;
 align-self: center;
-
 }
 
 }
@@ -514,10 +513,15 @@ header h1 {
   font-size: 25px;
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
-  padding-bottom: 5px;
   text-align: center;
+  padding-right: 0px;
+  padding-bottom: 0px;
   border-right: none;
   border-bottom: 2px solid #333366;
+
+
+
+  
 }
 
 .about-me-item.p1 {
@@ -595,22 +599,26 @@ header h1 {
 @media screen and (max-width: 768px) {
     
   .work-wrapper {
-    margin-top: 20px;
-   
+    margin-top: 0px;
+  
   }
   
   .work-grid-container {/* CSS Grid */
     /* Create a 3X6 grid for smaler screen */
     /* Will assign size directly to avoid grid span */
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: .5fr repeat(9, 1fr);
     /* Gap on x and y grid */
     gap: 2.5px 2.5px; 
-    
+ 
     
   }
+
+  /* Target the about me text only */
   
   .work-item.work-title {
+
+    font-size: 35px;
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     text-align: center;
@@ -619,8 +627,9 @@ header h1 {
     padding-bottom: 0px;
     border-bottom: 2px solid #333366;
     border-right: none;
-    
+    align-self: start;
   }
+
   
   .work-item-project.challenge-1-refactor {
     grid-column: 1 / span 3;
