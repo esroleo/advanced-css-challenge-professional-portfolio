@@ -665,6 +665,11 @@ header h1 {
      */
     align-items: flex-end;
     text-align: center;
+    /*background-attachment: fixed does not work in mobiles as of now */
+    /* similar function */
+    background-position: scroll 
+
+    
 
   }
 
@@ -681,6 +686,7 @@ header h1 {
     */
     align-items: flex-end;
     text-align: center;
+    background-position: scroll 
   }
   
   
@@ -701,8 +707,10 @@ header h1 {
     text-align: left;
     */
     /*background-position:  100% 50%;*/
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    background-position: scroll 
     text-align: center;
+    
   }
   
   .work-item-project.placeholder2 {
@@ -719,7 +727,8 @@ header h1 {
     padding-bottom: 15px;
     text-align: left;
     */
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    background-position: scroll 
     text-align: center;
   }
   
@@ -736,7 +745,8 @@ header h1 {
     padding-bottom: 15px;
     text-align: left;
     */
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    background-position: scroll 
     text-align: center;
   
   
@@ -749,7 +759,8 @@ header h1 {
     display: flex; /*Flex required to move the element as flex */
     align-items: center; /*Allow text to be at center of grid*/
     opacity: 1;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
+    background-position: scroll ;
     text-align: center;
 }
 
@@ -757,9 +768,10 @@ header h1 {
   margin-top: 10px;
 }
 
-
-
 }
+
+
+
    /* This will be applied on any screen smaller than 575px */
   @media screen and (max-width: 575px) {
 
