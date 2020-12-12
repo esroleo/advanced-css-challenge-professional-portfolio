@@ -193,8 +193,10 @@ footer a {
 }
 
 /* Create the ilussion of a brighter image once hovered */
+
+
 .work-grid-container div:hover{
-    opacity: 1;
+  mix-blend-mode: color-burn;
 }
 
 /* On over ghost item it will not reveal it! */
@@ -202,21 +204,6 @@ footer a {
 .work-grid-container .work-item-project.ghost-item:hover{
   opacity: 0;
 }
-/*
-#p1 {background-color: rgba(255, 0, 0, 0.3);}  
-#p2 {background-color: rgba(0, 255, 0, 0.3);}  
-#p3 {background-color: rgba(0, 0, 255, 0.3);}  
-
-
-/*
-.work-item-project :hover{
-  opacity: .8;
-
-}
-*/
-
-
-
 
 
 .work-grid-container {/*CSS Grid*/
@@ -243,8 +230,6 @@ footer a {
   grid-column: 2 / span 2;
   grid-row: 1 / span 6;
   background-image: url("../images/challeng-1-refactor-code.JPG");
-  /*Lower opacity, it will be adjusted with over to 1*/
-  opacity: .875;
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -258,8 +243,6 @@ footer a {
   grid-column: 3 /span 1;
   grid-row: 7 / span 4;
   background-image: url("../images/run-buddy-project.JPG");
-  /*Lower opacity, it will be adjusted with over to 1*/
-  opacity: .875;
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -274,8 +257,6 @@ footer a {
   grid-row: 7 / span 4; 
   /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
-  /*Lower opacity, it will be adjusted with over to 1*/
-  opacity: .875;
   background-size: cover;
   /* Allow the background image to align */
   display: flex; /*Flex required to move the element as flex */
@@ -291,8 +272,6 @@ footer a {
   grid-row: 1 / span 3;
   /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
-  /*Lower opacity, it will be adjusted with over to 1*/
-  opacity: .875;
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -306,8 +285,6 @@ footer a {
   grid-row: 4 / span 3;
   /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
-  /*Lower opacity, it will be adjusted with over to 1*/
-  opacity: .875;
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
