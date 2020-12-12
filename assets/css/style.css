@@ -92,6 +92,20 @@ footer a {
 
 /* End of semantic footer code */
 
+/* Start of class nav-effects */
+
+
+.nav-effects a:hover{
+  color: lightskyblue;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px lightskyblue;
+    /*Zoom in effect with font-size 2.5 vw*/
+    font-size: 2.5vw;
+}
+
+/* End of class nav-effects */
+
+
 /* Start of hero section with background */
 
 .hero {
@@ -178,6 +192,20 @@ footer a {
 
 }
 
+/* Create the ilussion of a brighter image once hovered */
+
+
+.work-grid-container div:hover{
+  mix-blend-mode: color-burn;
+}
+
+/* On over ghost item it will not reveal it! */
+
+.work-grid-container .work-item-project.ghost-item:hover{
+  opacity: 0;
+}
+
+
 .work-grid-container {/*CSS Grid*/
   width: 80%;
   display: grid;
@@ -187,6 +215,7 @@ footer a {
   /* Gap on x and y grid */
   gap: 10px 10px; 
 }
+
 
 .work-item.work-title {
   padding-top: 10px;
@@ -209,6 +238,7 @@ footer a {
   text-align: left;
 }
 
+
 .work-item-project.run-buddy {
   grid-column: 3 /span 1;
   grid-row: 7 / span 4;
@@ -227,7 +257,6 @@ footer a {
   grid-row: 7 / span 4; 
   /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
-  
   background-size: cover;
   /* Allow the background image to align */
   display: flex; /*Flex required to move the element as flex */
@@ -323,6 +352,18 @@ footer a {
   grid-template-rows: repeat(3,2fr);
   gap: 20px 20px; 
 }
+
+/* Start of hover effects on footer */
+
+.footer-container a:hover{
+  color: lightskyblue;
+  /*Zoom in effect with font-size 1.5vw*/
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px lightskyblue;
+}
+
+/* End of hover effects on footer */
 
 .footer-grid-item {
   text-align: center;
