@@ -48,7 +48,7 @@ header nav ul {
 header nav ul li {
     padding: 10px 15px;
     /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
-    font-size: 3vw;
+    font-size: 1.8vw;
     
     /* Match the Header h1 element on the flex container span element*/
     margin-top: 5px;
@@ -86,7 +86,7 @@ footer a {
   border-bottom: 2px solid #333366;
   color:  #333366;
   */
-  font-size: large;
+  font-size: 1.8vw;
   font-weight: bold;
 }
 
