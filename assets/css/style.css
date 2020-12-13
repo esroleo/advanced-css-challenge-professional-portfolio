@@ -418,7 +418,7 @@ footer a {
 
 @media screen and (max-width: 1024) {
 
-  
+
 /* Start of header smaller resolution code */
 /* Arranging items in columns of one element */
 /* Note that hero and work sections did not need any changes at this resolution */
@@ -544,6 +544,16 @@ align-self: center;
 
 /* this will be applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
+
+
+  
+
+
+  /* On over ghost item it will not disappear when pressed. */
+  
+  .work-grid-container .work-item-project.ghost-item:hover{
+    opacity: .8;
+  }
 
 /* Start of header smaller resolution code */
 
