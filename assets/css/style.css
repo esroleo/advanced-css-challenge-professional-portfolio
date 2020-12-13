@@ -440,11 +440,15 @@ footer a {
   }
 
   .footer-container { /* Desided to change the grid flow at this screen size for the footer */
+    /*width: 100% since to look better at lower screen size */
+    width: 100%;
     /* Create a 3X6 grid for smaler screen */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2.5px 2.5px; /* Gap on x and y grid */
   }
+
+  /*Extra padding to align as desired depending on different devices tested */
 
   .footer-grid-item.contact-me {
     padding-top: 0px;
@@ -456,24 +460,30 @@ footer a {
     padding-bottom: 0px;
     border-right: none;
     border-bottom: 2px solid lightskyblue;
+    padding-left: 25px;
   }
 
   .footer-grid-item.phone{
     grid-column: 1 / span 1;
     grid-row: 2 / span 2;
     align-self: center;
+    padding-left: 10px;
   }
 
   .footer-grid-item.email{
     grid-column: 2 span 1;
     grid-row: 2 / span 2;
     align-self: center;
+    padding-left: 25px;
+
   }
 
   .footer-grid-item.git-hub{
     grid-column: 3 span 1;
     grid-row: 2 / span 2;
     align-self: center;
+    width: 20px;
+    padding-left: 35px;
   }
   /* End of footer grid smaller screen code changes at res */
 }
