@@ -78,31 +78,32 @@
                 <div class="work-item work-title">
                     <p> Work </p>
                 </div>
-                <div class="work-item-project challenge-1-refactor">
+
+                <div onclick="myFunction('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
                     <span class="span-background">
                         <h3>Horiseon Services</h3>
                         <span class="lower-text">HTML/CSS</span>
                     </span>
                 </div>
-                <div class="work-item-project run-buddy image">
+                <div onclick="myFunction('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
                     <span class="span-background">
                         <h3>Run Buddy</h3>
                         <span class="lower-text">HTML/CSS</span>
                     </span>
                 </div>
-                <div class="work-item-project placeholder1">
+                <div alt="Placeholder grid for projects" title="Coming soon" class="work-item-project placeholder1">
                     <span class="span-background">
                         <h3>Coming soon!</h3>
                         <span class="lower-text">MERN Stack</span>
                     </span>
                 </div>
-                <div class="work-item-project placeholder2">
+                <div alt="Placeholder grid for projects" title="Coming soon" class="work-item-project placeholder2">
                     <span class="span-background">
                         <h3>Coming soon!</h3>
                         <span class="lower-text">Node/Iot</span>
                     </span>
                 </div>
-                <div class="work-item-project placeholder3">
+                <div alt="Placeholder grid for projects" title="Coming soon" class="work-item-project placeholder3">
                     <span class="span-background">
                         <h3>Coming soon!</h3>
                         <span class="lower-text">React/Javascript/CSS</span>
@@ -137,5 +138,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- javascript function direct user to the appropiate landing page based on project clicked -->
+<script>
+    function myFunction(input) {
+
+     
+        var input = input;
+   
+        if (input == "challenge-1-refactor") {
+            /*location.href = "https://esroleo.github.io/html-css-git-challenge1-code-refactor/";*/
+            window.open("https://esroleo.github.io/html-css-git-challenge1-code-refactor/");
+            alert(project)
+        } else if (input == "run-buddy") {
+            window.open("https://esroleo.github.io/run-buddy/");
+        }
+
+        return true;
+      
+    }
+</script>
+
 </body>
 </html>
