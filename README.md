@@ -9,7 +9,8 @@
 ## 1. Description
 
 
-### Advanced-css-challenge-professional-portfolio Landing Pages
+### This is the landing page for Esteban Romero web portfolio.
+
 
 Desktop screen:
 
@@ -18,8 +19,6 @@ Desktop screen:
 Smaller devices screen example:
 
 ![Top-Page-Area](./assets/images/main-page-smaller.JPG?raw=true "Top-Page-Area")
-
-This website is the landing page for Esteban Romero Portfolio.
 
 <a name="web-address"></a>
 ## 2. How to Get There
