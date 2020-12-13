@@ -8,12 +8,15 @@
 <a name="desc"></a>
 ## 1. Description
 
-##Advanced-css-challenge-professional-portfolio navigations bars
+
+### Advanced-css-challenge-professional-portfolio Landing Pages
 
 Desktop screen:
+
 ![Top-Page-Area](./assets/images/main-page.JPG?raw=true "Top-Page-Area")
 
 Smaller devices screen example:
+
 ![Top-Page-Area](./assets/images/main-page-smaller.JPG?raw=true "Top-Page-Area")
 
 This website is the landing page for Esteban Romero Portfolio.
@@ -21,24 +24,36 @@ This website is the landing page for Esteban Romero Portfolio.
 <a name="web-address"></a>
 ## 2. How to Get There
 
-Open your favorite web browser and enter the following web address to access.
+### Open your favorite web browser and enter the following web address to access.
 
 ```html
-https://esroleo.github.io/html-css-git-challenge1-code-refactor/
+https://esroleo.github.io/advanced-css-challenge-professional-portfolio/
 ```
 <a name="usage"></a>
 ## 3. Usage Tips
 
 
-Use the top right navigation panel to visit the different sections of the web page.
+### Use the top right navigation panel to visit the different sections of the web page.
 
-![nav-menu](./assets/images/nav-menu.jpg?raw=true "Navigational Menu")
+Desktop screen:
+
+![nav-menu](./assets/images/nav-menu.JPG?raw=true "Navigational Menu")
+
+Smaller devices screen example:
+
+![nav-menu](./assets/images/nav-menu.JPG?raw=true "Navigational Menu")
 
 
 
-Explore the rest of the page by scrolling up or down.
+### Explore the rest of the page by scrolling up or down.
 
-##![body-section](./assets/images/body-section.jpg?raw=true "Body Section")
+Desktop screen:
+
+![body-section](./assets/images/navigate-website.JPG?raw=true "Body Section")
+
+Smaller devices screen example:
+
+![body-section](./assets/images/navigate-website-smaller.JPG?raw=true "Body Section")
 
 
 <a name="contributing"></a>
