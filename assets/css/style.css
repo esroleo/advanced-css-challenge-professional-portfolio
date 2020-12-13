@@ -79,7 +79,6 @@ footer a {
   font-weight: bold;
 }
 /* End footer code */
-
 /* End of Semantic code */
 
 /* Start of hover effects on multiple classes */
@@ -206,7 +205,7 @@ footer a {
 .work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
   grid-column: 2 / span 2;
   grid-row: 1 / span 6;
-  background-image: url("../images/challeng-1-refactor-code.JPG");
+  background-image: url("../images/challeng-1-refactor-code-smaller.JPG");
   background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -228,7 +227,6 @@ footer a {
   text-align: left;
   border: .25vw solid rgba(135, 206, 250, 0.8);
 }
-
 
 .work-item-project.placeholder1 {
   grid-column: 2 / span 1;
@@ -358,340 +356,162 @@ footer a {
 /* End of CSS Flex/Grid Footer non-semantic Code */
 
 
-/* Media queries for smaller than desktop screens */
+/* Start of media queries for smaller resolutions */
 
-@media screen and (max-width: 1024) {
-
-
-/* Start of header smaller resolution code */
-/* Arranging items in columns of one element */
-/* Note that hero and work sections did not need any changes at this resolution */
-
-.nav-effects a:hover{
-
-  
-  color: "";
-  font-weight: "";
-  text-shadow: "";
-    /*Zoom in effect with font-size 2.5 vw */
-    font-size: "";
-    
-
-    
-}
-
-/* Start of header smaller screen code changes */
-
-header {
-  justify-content: center;
-}
-
-header h1 {
-/* At smaller screens remove space at left of h1 on header */
-padding-left: 0px;
-}
-
-/* End of header smaller screen code chnages */
-
-
-
-/* Start of about me grid smaller screen code changes */
-.about-me-wrapper {
-margin-top: 20px;
-}
-
-.about-me-grid-container {/*CSS Grid*/
-/* Create a 3X6 grid for smaler screen */
-grid-template-columns: repeat(3, 2fr);
-grid-template-rows: repeat(5, 1fr);
-/* Gap on x and y grid */
-gap: 5px 5px; 
-}
-
-/* Target the about me text only */
-.about-me-item.about-me-title {
-padding-top: 0px;
-font-size: 25px;
-grid-column: 1 / span 3;
-grid-row: 1 / span 1;
-padding-bottom: 5px;
-text-align: center;
-border-right: none;
-border-bottom: 2px solid #333366;
-align-self: start;
-}
-
-.about-me-item.p1 {
-padding-top: 5px;
-grid-column: 1 / span 3;
-grid-row: 2 / span 2;
-}
-
-.about-me-item.p2 {
-padding-top: 5px;
-grid-column: 1 / span 3;
-grid-row: 4 / span 2;
-/* Push away the work container from the about me grid containter */
-padding-bottom: 10px;
-}
-
-/* End of about me grid smaller screen code changes */
-
-
-/* Start of footer grid smaller screen code changes */
-
-.footer-wrapper {
-margin-top: 20px;
-}
-
-.footer-container {
-
-/* Create a 3X6 grid for smaler screen */
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-/* Gap on x and y grid */
-gap: 2.5px 2.5px; 
-}
-
-.footer-grid-item.contact-me {
-padding-top: 0px;
-font-size: 25px;
-grid-column: 1 / span 3;
-grid-row: 1 / span 1;
-text-align: center;
-padding-right: 0px;
-padding-bottom: 0px;
-border-right: none;
-border-bottom: 2px solid lightskyblue;
-}
-
-.footer-grid-item.phone{
-/* Grid knows the order to put the elements if only defined on location */
-grid-column: 1 / span 1;
-grid-row: 2 / span 2;
-align-self: center;
-}
-
-.footer-grid-item.email{
-
-grid-column: 2 span 1;
-grid-row: 2 / span 2;
-align-self: center;
-}
-
-.footer-grid-item.git-hub{
-
-grid-column: 3 span 1;
-grid-row: 2 / span 2;
-align-self: center;
-}
-
-}
-
-/* this will be applied on any screen smaller than 980px */
+/* This will be applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
 
-
-/* Start of cool subtitle hero section update for smaller screens */
-
-.hero-subtitle {
-  padding-right: 30px;
-}
-
-.span-background.opacity{
-  font-size: 25px;
-}
-
-
-
-  /* On over ghost item it will not disappear when pressed. */
-  
-  .work-grid-container .work-item-project.ghost-item:hover{
-    opacity: .8;
-  }
-
-/* Start of header smaller resolution code */
-
-/* Start of code to remove hover effect on lower resolutions */
-
-.nav-effects a:hover{
-
-  
-  color: "";
-  font-weight: "";
-  text-shadow: "";
-  /*Zoom in effect with font-size 2.5 vw */
-  font-size: "";
-    
-
-    
-}
-
-
-/* End of code to remove hover effect on lower resolutions */
-
-
-
-
-
-/* Arranging items in columns of one element */
-/* Note that hero and work sections did not need any changes at this resolution */
-
-
-/* Start of header smaller screen code changes */
-
+  /* Start of footer grid smaller screen code changes at res */
   header {
     justify-content: center;
-}
-
-header h1 {
-  /* At smaller screens remove space at left of h1 on header */
-  padding-left: 0px;
-}
-
-/* End of header smaller screen code chnages */
-
-/* Start of about me grid smaller screen code changes */
-.about-me-wrapper {
-  margin-top: 20px;
-}
-
-.about-me-grid-container {/*CSS Grid*/
-  /* Create a 3X6 grid for smaler screen */
-  grid-template-columns: repeat(3, 2fr);
-  grid-template-rows: repeat(5, 1fr);
-  /* Gap on x and y grid */
-  gap: 5px 5px; 
-}
-
-/* Target the about me text only */
-.about-me-item.about-me-title {
-  padding-top: 0px;
-  font-size: 25px;
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 1;
-  text-align: center;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  border-right: none;
-  border-bottom: 2px solid #333366;
-}
-
-.about-me-item.p1 {
-  padding-top: 5px;
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 2;
-}
-
-.about-me-item.p2 {
-  padding-top: 5px;
-  grid-column: 1 / span 3;
-  grid-row: 4 / span 2;
-  /* Push away the work container from the about me grid containter */
-  padding-bottom: 10px;
-}
-
-/* End of about me grid smaller screen code changes */
-
-
-/* Start of footer grid smaller screen code changes */
-
-.footer-wrapper {
-  margin-top: 20px;
-}
-
-.footer-container {
-
-  /* Create a 3X6 grid for smaler screen */
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* Gap on x and y grid */
-  gap: 2.5px 2.5px; 
-}
-
-.footer-grid-item.contact-me {
-  padding-top: 0px;
-  font-size: 25px;
-  grid-column: 1 / span 3;
-  grid-row: 1 / span 1;
-  text-align: center;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  border-right: none;
-  border-bottom: 2px solid lightskyblue;
-}
-
-.footer-grid-item.phone{
-  /* Grid knows the order to put the elements if only defined on location */
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 2;
-  align-self: center;
-}
-
-.footer-grid-item.email{
-  
-  grid-column: 2 span 1;
-  grid-row: 2 / span 2;
-  align-self: center;
-}
-
-.footer-grid-item.git-hub{
-  
-  grid-column: 3 span 1;
-  grid-row: 2 / span 2;
-  align-self: center;
-
-}
-
-}
-/* End of footer grid smaller screen code changes */
-  
-
-
-/* This will be applied on any screen smaller than 768px */
-@media screen and (max-width: 768px) {
-
-
-
-
-
-  /* Start of semantic header code for viewport */
-  header a {
-    /*measurment of vw is equal to view port measurement.*/
-    font-size: 3vw;
   }
 
-footer a {
+  header h1 {
+    /* At smaller screens remove space at left of h1 on header */
+    padding-left: 0px;
+  }
 
-  font-size: 1.8vw;
+  /* End of header smaller screen code chnages */
 
-}
+  /* Lower than this resolution smaller change had to be made to account for the smaller resolutions even when havin flex or css grids */
+  .hero-subtitle {
+    padding-right: 30px;
+  }
 
+  .span-background.opacity{
+    font-size: 25px;
+  }
 
-.nav-effects a:hover{
-    /*Zoom in effect with font-size 2.5 vw */
-    font-size: 3vw; 
-}
-
-.footer-container a:hover{
-
-  font-size: 1.8vw;
-
-}
-
- /* End of semantic header code for viewport */
-
-  /* Change image attachment to scroll to avoid following the image */
   .hero {
-    
-    background-attachment: scroll;
-    }
-    
-  /*Fix spacing issue between about-me title and bottom border */
+  background-attachment: scroll;
+  }
 
+  /* Start of about me grid smaller screen code changes */
+  .about-me-wrapper {
+    margin-top: 20px;
+  }
 
   .about-me-grid-container {/*CSS Grid*/
     /* Create a 3X6 grid for smaler screen */
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* Gap on x and y grid */
+    gap: 5px 5px; 
+  }
+
+  /* Target the about me text only */
+  .about-me-item.about-me-title {
+    padding-top: 0px;
+    font-size: 25px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-right: none;
+    border-bottom: 2px solid #333366;
+  }
+
+  .about-me-item.p1 {
+    padding-top: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+  }
+
+  .about-me-item.p2 {
+    padding-top: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+    /* Push away the work container from the about me grid containter */
+    padding-bottom: 10px;
+  }
+  /* End of about me grid smaller screen code changes */
+
+  /* Start of work projects grid smaller screen code changes */
+  /* As part of my parent invisible ghost item test, I had to actually show it in smaller devices as you could click it on android but not IO's */
+  .work-grid-container .work-item-project.ghost-item:hover{
+    opacity: .8;
+  }
+  /* End of work projects grid smaller screen code changes */
+
+  /* Start of footer grid smaller screen code changes */
+  .footer-wrapper {
+    margin-top: 20px;
+  }
+
+  .footer-container { /* Desided to change the grid flow at this screen size for the footer */
+    /* Create a 3X6 grid for smaler screen */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.5px 2.5px; /* Gap on x and y grid */
+  }
+
+  .footer-grid-item.contact-me {
+    padding-top: 0px;
+    font-size: 25px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-right: none;
+    border-bottom: 2px solid lightskyblue;
+  }
+
+  .footer-grid-item.phone{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    align-self: center;
+  }
+
+  .footer-grid-item.email{
+    grid-column: 2 span 1;
+    grid-row: 2 / span 2;
+    align-self: center;
+  }
+
+  .footer-grid-item.git-hub{
+    grid-column: 3 span 1;
+    grid-row: 2 / span 2;
+    align-self: center;
+  }
+  /* End of footer grid smaller screen code changes at res */
+}
+
+/* This will be applied on any screen smaller than 768px */
+@media screen and (max-width: 768px) {
+  /* Start of footer grid smaller screen code changes at res */
+
+  /* Start of semantic elents code changes */
+  header a {
+    /* Allow screen changes relatively to the viewport of the width available*/
+    font-size: 3vw;
+  }
+
+  footer a {
+    font-size: 1.8vw;
+  }
+  /* End of semantic elents code changes */
+
+  /* Start of class code changes */
+  .nav-effects a:hover{
+      /* Zoom in effect removed - this is matching the size of the text that is being hoverd*/
+      /* This is to avoid as much as possible any changes on text size when pressed */
+      font-size: 3vw; 
+  }
+
+  .footer-container a:hover{
+    font-size: 1.8vw;
+  }
+
+  /* Change image attachment to scroll to avoid following the image */
+  /* This partially works on android phones tested, it does not work in IO's as of December 13, 2020 */
+  .hero {
+    background-attachment: scroll;
+  }
+    
+  .about-me-grid-container {/*CSS Grid*/
+    /* Create a 3X6 grid for smaler screen with one column .5fr or smaller than 1 fraction of the other 4 rows */
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: .5fr repeat(4, 1fr);
     /* Gap on x and y grid */
@@ -712,38 +532,30 @@ footer a {
     align-self: start;
   }
 
+  .about-me-item.p1 { /* Avoid too much space in the paragraph by removing parent paddings */
+    padding-left: 0px;
+  }
 
-  /* Avoid too much space in the paragraph by removing parent paddings */
-    .about-me-item.p1 {
-      padding-left: 0px;
-    }
-  
-    .about-me-item.p2 {
-      padding-left: 0px;
-    }
-
-    
+  .about-me-item.p2 { /* Avoid too much space in the paragraph by removing parent paddings */
+    padding-left: 0px;
+  }
 
   .work-wrapper {
     margin-top: 15px;
-  
   }
-  
+
   .work-grid-container {/* CSS Grid */
-    /* Create a 3X6 grid for smaler screen */
+    /* Create a 3X9 grid for smaler screen */
     /* Will assign size directly to avoid grid span */
     grid-template-columns: repeat(3, 1fr);
     /* .5fr is to fix spacing on main title item */
     grid-template-rows: .5fr repeat(9, 1fr);
     /* Gap on x and y grid */
-    gap: 2.5px 2.5px; 
-    
+    gap: 2.5px 2.5px;
   }
 
   /* Target the about me text only */
-  
   .work-item.work-title {
-
     font-size: 35px;
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
@@ -756,82 +568,34 @@ footer a {
     align-self: start;
   }
 
-  
   .work-item-project.challenge-1-refactor {
     grid-column: 1 / span 3;
     grid-row: 2 / span 3;
-    /*
-    background-image: url("../images/challeng-1-refactor-code.JPG");
-    background-size: cover;
-    display: flex; 
-    align-items: flex-end;
-    padding-bottom: 15px;
-     */
     align-items: flex-end;
     text-align: center;
-    /*background-attachment: fixed does not work in mobiles as of now */
-    /* similar function */
-    background-position: scroll;
-
-    
-
+    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
   }
 
   .work-item-project.run-buddy {
     grid-column: 1 /span 3;
     grid-row: 5 / span 2;
-    /*
-    background-image: url("../images/run-buddy-project.JPG");
-    background-size: cover;
-    display: flex;
-    align-items: flex-end; 
-    padding-left: 0px;
-    padding-bottom: 15px;
-    */
     align-items: flex-end;
     text-align: center;
-    background-position: scroll;
+    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
   }
-  
   
   .work-item-project.placeholder1 {
     grid-column: 1 /span 3;
     grid-row: 7 / span 1;
-    /* By paddint top from run buddy all of my grid grew in size */
-    /* Allowing proper look. */
+    /* By padding top from run buddy all of my grid grew in size. Allowing proper look. */
     padding-top: 30px;
-    /* Royalty free image */
-    /*
-    background-image: url("../images/pexels-luizclas-556665.jpg");
-    background-size: cover;
-    display: flex; 
-    align-items: flex-end; 
-    padding-left: 0px;
-    padding-bottom: 15px;
-    text-align: left;
-    */
-    /*background-position:  100% 50%;*/
-    /*background-attachment: fixed;*/
     background-position: scroll;
     text-align: center;
-    
   }
   
   .work-item-project.placeholder2 {
     grid-column: 1 /span 3;
     grid-row: 8 / span 1;
-    /* Royalty free image */
-    /*
-    background-image: url("../images/pexels-luizclas-556665.jpg");
-    background-size: cover;
-    background-position: 30%;
-    display: flex; 
-    align-items: flex-end; 
-    padding-left: 0px;
-    padding-bottom: 15px;
-    text-align: left;
-    */
-    /*background-attachment: fixed;*/
     background-position: scroll;
     text-align: center;
   }
@@ -839,20 +603,11 @@ footer a {
   .work-item-project.placeholder3 {
     grid-column: 1 /span 3;
     grid-row: 9 / span 1;
-    /* Royalty free image */
-    /*
-    background-image: url("../images/pexels-luizclas-556665.jpg");
-    background-size: cover;
-    display: flex; 
-    align-items: flex-end; 
-    padding-left: 0px;
-    padding-bottom: 15px;
-    text-align: left;
-    */
-    /*background-attachment: fixed;*/
     background-position: scroll;
     text-align: center;
-    }
+  }
+  
+  /* Ghost item made avialable at smaller screens as I android devices can click it. Ghost item is an inteional practice test */
   .work-item-project.ghost-item {
     grid-column: 1 /span 3;
     grid-row: 10 / span 1;
@@ -861,78 +616,54 @@ footer a {
     display: flex; /*Flex required to move the element as flex */
     align-items: center; /*Allow text to be at center of grid*/
     opacity: 1;
-    /*background-attachment: fixed;*/
     background-position: scroll;
     text-align: center;
-    }
+  }
 
-.footer-wrapper { /* Get the footer closer to the work grid container */
+  .footer-wrapper { /* Get the footer closer to the work grid container at the top*/
   margin-top: 10px;
   }
 
+  /* End of footer grid smaller screen code changes at res */
 }
 
    /* This will be applied on any screen smaller than 575px */
-  @media screen and  (max-width: 575px) {
+@media screen and  (max-width: 575px) {
+  /* Start of footer grid smaller screen code changes at res */
 
-    
-  /* Start of semantic header code for viewport */
+  /* Start of semantic elents code changes */
   header a {
-    /*measurment of vw is equal to view port measurement.*/
     font-size: 4vw;
-}
-
-footer a {
-
-  font-size: 3.5vw;
-
-}
-
-
-.nav-effects a:hover{
-    /*Zoom in effect with font-size 2.5 vw */
-    font-size: 4vw; 
-}
-
-.footer-container a:hover{
-
-  font-size: 3.5vw;
-
-}
-
-.footer-grid-item.git-hub{
-  padding-right: 40px;
-}
-
-    /* Fix flex header to show priperly aligned */
-
-    header nav ul {
-      padding-right: 0px;
-      justify-content: center;
-      /*
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    padding-right: 60px;
-}
-    */
-    }
-
-    header nav ul li {
-      padding: 2px 2px 2px 2px;
-    }
-
-
-
-    /* Applying view port here first to scale backwards as test */
-
-    p{
-      font-size:5vw;
-    }
-
-
-
   }
+
+  header nav ul {
+    padding-right: 0px;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    padding: 2px 2px 2px 2px;
+  }
+
+  p{
+    font-size:5vw;
+  }
+
+  footer a {
+    font-size: 3.5vw;
+  }
+
+  .nav-effects a:hover{
+      /* Zoom in effect removed - this is matching the size of the text that is being hoverd*/
+      /* This is to avoid as much as possible any changes on text size when pressed */
+      font-size: 4vw; 
+  }
+
+  .footer-container a:hover{
+    font-size: 3.5vw;
+  }
+
+  .footer-grid-item.git-hub{
+    padding-right: 40px;
+  }
+}
