@@ -688,7 +688,7 @@ header h1 {
 
 
   /* Start of semantic header code for viewport */
-  header nav ul li {
+  header a {
     /*measurment of vw is equal to view port measurement.*/
     font-size: 3vw;
 }
@@ -876,17 +876,17 @@ header h1 {
    /* This will be applied on any screen smaller than 575px */
   @media screen and  (max-width: 575px) {
 
- 
+   /* Start of semantic header code for viewport */
+   header a {
+    /*measurment of vw is equal to view port measurement.*/
+    font-size: 4vw;
+}
 
     /* Fix flex header to show priperly aligned */
 
     header nav ul {
-
-
-    
       padding-right: 0px;
       justify-content: center;
-      
       /*
   header nav ul {
     display: flex;
