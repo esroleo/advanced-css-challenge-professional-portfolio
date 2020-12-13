@@ -24,7 +24,7 @@ This website is the landing page for Esteban Romero Portfolio.
 <a name="web-address"></a>
 ## 2. How to Get There
 
-Open your favorite web browser and enter the following web address to access.
+### Open your favorite web browser and enter the following web address to access.
 
 ```html
 https://esroleo.github.io/advanced-css-challenge-professional-portfolio/
