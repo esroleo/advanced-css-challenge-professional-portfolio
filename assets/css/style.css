@@ -48,8 +48,8 @@ header nav ul {
 header nav ul li {
     padding: 10px 15px;
     /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
-    font-size: 1.55vw;
-    font-size: 20px;
+    font-size: 3vw;
+    
     /* Match the Header h1 element on the flex container span element*/
     margin-top: 5px;
     margin-bottom: 10px;
@@ -96,11 +96,16 @@ footer a {
 
 
 .nav-effects a:hover{
+
+  
   color: lightskyblue;
   font-weight: bold;
   text-shadow: 0px 0px 20px lightskyblue;
-    /*Zoom in effect with font-size 2.5 vw*/
+    /*Zoom in effect with font-size 2.5 vw */
     font-size: 2.5vw;
+    
+
+    
 }
 
 /* End of class nav-effects */
@@ -368,7 +373,7 @@ footer a {
 .footer-container a:hover{
   color: lightskyblue;
   /*Zoom in effect with font-size 1.5vw*/
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-weight: bold;
   text-shadow: 0px 0px 20px lightskyblue;
 }
@@ -418,6 +423,18 @@ footer a {
 /* Arranging items in columns of one element */
 /* Note that hero and work sections did not need any changes at this resolution */
 
+.nav-effects a:hover{
+
+  
+  color: "";
+  font-weight: "";
+  text-shadow: "";
+    /*Zoom in effect with font-size 2.5 vw */
+    font-size: "";
+    
+
+    
+}
 
 /* Start of header smaller screen code changes */
 
@@ -529,6 +546,29 @@ align-self: center;
 @media screen and (max-width: 980px) {
 
 /* Start of header smaller resolution code */
+
+/* Start of code to remove hover effect on lower resolutions */
+
+.nav-effects a:hover{
+
+  
+  color: "";
+  font-weight: "";
+  text-shadow: "";
+    /*Zoom in effect with font-size 2.5 vw */
+    font-size: "";
+    
+
+    
+}
+
+
+/* End of code to remove hover effect on lower resolutions */
+
+
+
+
+
 /* Arranging items in columns of one element */
 /* Note that hero and work sections did not need any changes at this resolution */
 
@@ -825,10 +865,8 @@ header h1 {
 
 }
 
-
-
    /* This will be applied on any screen smaller than 575px */
-  @media screen and (max-width: 575px) {
+  @media screen and  (max-width: 575px) {
 
  
 
