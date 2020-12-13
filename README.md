@@ -8,12 +8,14 @@
 <a name="desc"></a>
 ## 1. Description
 
-##Advanced-css-challenge-professional-portfolio navigations bars
+## Advanced-css-challenge-professional-portfolio Landing Pages
 
 Desktop screen:
+
 ![Top-Page-Area](./assets/images/main-page.JPG?raw=true "Top-Page-Area")
 
 Smaller devices screen example:
+
 ![Top-Page-Area](./assets/images/main-page-smaller.JPG?raw=true "Top-Page-Area")
 
 This website is the landing page for Esteban Romero Portfolio.
