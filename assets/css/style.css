@@ -211,7 +211,7 @@ footer a {
   display: grid;
   /* Create a 6X8 grid. */
   grid-template-columns: 1fr repeat(3, 2fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   /* Gap on x and y grid */
   gap: 10px 10px; 
 }
@@ -220,7 +220,7 @@ footer a {
 .work-item.work-title {
   padding-top: 10px;
   font-size: 35px;
-  grid-row: 1 / span 15;
+  grid-row: 1 / span 8;
   text-align: right;
   padding-right: 10px;
   border-right: 2px solid #333366;
