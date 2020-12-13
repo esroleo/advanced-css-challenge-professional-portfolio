@@ -236,12 +236,14 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
+
+  
 }
 
 
 .work-item-project.run-buddy {
   grid-column: 3 /span 1;
-  grid-row: 7 / span 4;
+  grid-row: 7 / span 2;
   background-image: url("../images/run-buddy-project.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
@@ -249,12 +251,15 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
+
+
+
 }
 
 
 .work-item-project.placeholder1 {
   grid-column: 2 / span 1;
-  grid-row: 7 / span 4; 
+  grid-row: 7 / span 2; 
   /* Royalty free image */
   background-image: url("../images/pexels-luizclas-556665.jpg");
   background-size: cover;
