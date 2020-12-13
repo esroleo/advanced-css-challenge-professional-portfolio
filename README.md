@@ -1,8 +1,3 @@
-# advanced-css-challenge-professional-portfolio
-Professional showcasing HTML5 CSS (Flex and Grids)
-
-
-
 1. [ Description. ](#desc)
 2. [ Web Address. ](#web-address)
 3. [ Usage tips. ](#usage)
@@ -10,12 +5,13 @@ Professional showcasing HTML5 CSS (Flex and Grids)
 5. [ License. ](#license)
 
 
-<a name="desk"></a>
+<a name="desc"></a>
 ## 1. Description
 
 #Advanced-css-challenge-professional-portfolio.
 
-#![Logo-Inc](./assets/images/logo-inc.jpg?raw=true "Logo Inc")
+![Top-Page-Area](./assets/images/nav-menu.JPG?raw=true "Top-Page-Area")
+
 
 This website is the landing page for Esteban Romero Portfolio.
 
@@ -33,7 +29,7 @@ https://esroleo.github.io/html-css-git-challenge1-code-refactor/
 
 Use the top right navigation panel to visit the different sections of the web page.
 
-##![nav-menu](./assets/images/nav-menu.jpg?raw=true "Navigational Menu")
+![nav-menu](./assets/images/nav-menu.jpg?raw=true "Navigational Menu")
 
 
 
