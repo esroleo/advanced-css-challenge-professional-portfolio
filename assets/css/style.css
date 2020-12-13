@@ -546,9 +546,6 @@ align-self: center;
 @media screen and (max-width: 980px) {
 
 
-  
-
-
   /* On over ghost item it will not disappear when pressed. */
   
   .work-grid-container .work-item-project.ghost-item:hover{
@@ -565,8 +562,8 @@ align-self: center;
   color: "";
   font-weight: "";
   text-shadow: "";
-    /*Zoom in effect with font-size 2.5 vw */
-    font-size: "";
+  /*Zoom in effect with font-size 2.5 vw */
+  font-size: "";
     
 
     
@@ -702,6 +699,25 @@ header h1 {
     /*measurment of vw is equal to view port measurement.*/
     font-size: 3vw;
 }
+
+footer a {
+
+  font-size: 1.8vw;
+
+}
+
+
+.nav-effects a:hover{
+    /*Zoom in effect with font-size 2.5 vw */
+    font-size: 3vw; 
+}
+
+.footer-container a:hover{
+
+  font-size: 1.8vw;
+
+}
+
  /* End of semantic header code for viewport */
 
   /* Change image attachment to scroll to avoid following the image */
@@ -886,10 +902,34 @@ header h1 {
    /* This will be applied on any screen smaller than 575px */
   @media screen and  (max-width: 575px) {
 
-   /* Start of semantic header code for viewport */
-   header a {
+
+    
+  /* Start of semantic header code for viewport */
+  header a {
     /*measurment of vw is equal to view port measurement.*/
     font-size: 4vw;
+}
+
+footer a {
+
+  font-size: 3.5vw;
+
+}
+
+
+.nav-effects a:hover{
+    /*Zoom in effect with font-size 2.5 vw */
+    font-size: 4vw; 
+}
+
+.footer-container a:hover{
+
+  font-size: 3.5vw;
+
+}
+
+.footer-grid-item.git-hub{
+  padding-right: 40px;
 }
 
     /* Fix flex header to show priperly aligned */
@@ -922,25 +962,5 @@ header h1 {
     }
 
 
-    .footer-container a {
-      font-size:3.3vw;
-    }
-    
-    .footer-grid-item.email{
-  
-      
-      text-align: left;
-      padding-left: 4.5vw;
-
-
-    }
-
-    .footer-grid-item.git-hub{
-      /* Using text align and vw to allow some cell spacing */
-      text-align: left;
-      padding-left: 5vw;
-
-    }
-   
 
   }
