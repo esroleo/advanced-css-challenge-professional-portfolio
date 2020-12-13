@@ -688,8 +688,8 @@ header h1 {
 
   /* Change fixed background attchment for mobile */
   .hero {
-    background-position: scroll;
-    background-attachment: none;
+    
+    background-attachment: scroll;
     }
     
   /*Fix spacing issue between about-me title and bottom border */
