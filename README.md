@@ -15,7 +15,7 @@ Desktop screen:
 
 ![Top-Page-Area](./assets/images/main-page.JPG?raw=true "Top-Page-Area")
 
-####Smaller devices screen example:
+Smaller devices screen example:
 
 ![Top-Page-Area](./assets/images/main-page-smaller.JPG?raw=true "Top-Page-Area")
 
@@ -45,9 +45,15 @@ Smaller devices screen example:
 
 
 
-Explore the rest of the page by scrolling up or down.
+### Explore the rest of the page by scrolling up or down.
 
-##![body-section](./assets/images/body-section.jpg?raw=true "Body Section")
+Desktop screen:
+
+![body-section](./assets/images/navigate-website.JPG?raw=true "Body Section")
+
+Smaller devices screen example:
+
+![body-section](./assets/images/navigate-website-smaller.JPG?raw=true "Body Section")
 
 
 <a name="contributing"></a>
