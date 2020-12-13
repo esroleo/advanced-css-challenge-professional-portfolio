@@ -1,34 +1,24 @@
-/* Remove default html margin, padding and assign box-sizinz as border-box*/
-
+/* Remove default html margin, padding and assign box-sizinz as border-box to all */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: Arial, Helvetica, sans-serif;*/
-
 }
 
-/* Smoth Scrolling effect */
+/* Start of Semantic code */
 
+/* Smoth Scrolling effect */
 html {
   scroll-behavior: smooth;
 }
 
-/* Start of CSS FLEX Header code */
-
-body{
-  background-color: lightgray;
-  /* googleapis font family Karla */
-  font-family: 'Martel', serif;
-}
-
-
+/* Start of Header code */
 header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    background-color: #404040;
+  display: flex; /* Flex container to display the child elements as flex with space between and wrap */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #404040;
 }
 
 header h1 {
@@ -37,26 +27,25 @@ header h1 {
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    padding-right: 60px;
+  display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-right: 60px;
 }
 
 header nav ul li {
-    padding: 10px 15px;
-    /*measurment of vw is equal to view port measurement. When moving the size of the window, It shrings in size too relatively to the view point of the user"*/
-    font-size: 1.8vw;
-    
-    /* Match the Header h1 element on the flex container span element*/
-    margin-top: 5px;
-    margin-bottom: 10px;
-    
+  /*Viewport font-size to help with the responsiveness of the web page */
+  font-size: 1.8vw;
+  /* Align nave element to closely match the header h1 element*/
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  
 }
 
-/* Remove text anchor default decoreations */
+/* Remove text anchor default decoreations and apply specific styles individulally*/
 header a {
   /* Longer bootom border under the element as mockup */
   padding-left: 10px;
@@ -65,86 +54,90 @@ header a {
   text-decoration: none;
   border-bottom: 2px solid lightskyblue;
   color: lightskyblue;
- 
 }
-
 /* End of header code */
 
-/* Start of semantic footer code */
+/* Start of body code */
+body{
+  background-color: lightgray; /* Apply background to all of the body of the page */
+  /* googleapis font family Karla */
+  font-family: 'Martel', serif;
+}
+/* End of body code */
 
+/* Start of footer code */
 footer {
-  background-color: #404040;
-  color: lightskyblue;
+  background-color: #404040; /* Apply background to all of the body of the page */
+  color: lightskyblue; /* Title color */
 }
 
 footer a {
   text-decoration: none;
-  border-bottom: 2px solid lightskyblue;
-  color: lightskyblue;
- 
-  /*
-  border-bottom: 2px solid #333366;
-  color:  #333366;
-  */
-  font-size: 1.8vw;
+  border-bottom: 2px solid lightskyblue; /* Border bottom */
+  color: lightskyblue; /* anchor text color */
+  font-size: 1.8vw; /* View port font-size to help with responsiveness */
   font-weight: bold;
 }
+/* End footer code */
 
-/* End of semantic footer code */
+/* End of Semantic code */
 
-/* Start of class nav-effects */
+/* Start of hover effects on multiple classes */
 
-
-.nav-effects a:hover{
-
-  
+/* Header nav hover */
+.nav-effects a:hover{ 
   color: lightskyblue;
   font-weight: bold;
   text-shadow: 0px 0px 20px lightskyblue;
-    /* REMOVED - Zoom in effect with font-size 2.5 vw */
-    /*Will revisit for next project iteration
-   font-size: 2.5vw;*/
-    
-
-
-
-    
 }
 
-/* End of class nav-effects */
+/* Work projects hover */
+.work-grid-container div:hover{ /* Create the ilussion of a brighter image once hovered */
+  mix-blend-mode: color-burn;
+}
 
+/* The ghost item is a cell that is invisible, this is intentional for training showcasing purposes. IT IS INTENTIONAL TO BE INVISIBLE :)*/
+.work-grid-container .work-item-project.ghost-item:hover{ /* On over ghost item it will not reveal it! */
+  opacity: 0;
+}
+
+/* Footer hover */
+.footer-container a:hover{
+  color: lightskyblue;
+  /*REMOVED - Zoom in effect with font-size 1.5vw
+  Will revisit for next project iteration
+  font-size: 2vw;*/
+  font-weight: bold;
+  text-shadow: 0px 0px 20px lightskyblue;
+}
+/* End of hover effects on multiple classes */
 
 /* Start of hero section with background */
-
-.hero {
+.hero { /* Here section is a flex container */
   height: 300px;
   background-image: url("../images/Toronto-night.jpg");
-  /* border-radious bottom sides with bottom border changed also*/
-  border-bottom-left-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px; /* border-radious bottom sides with bottom border changed also*/
   border-bottom-right-radius: 30px 30px;
-  /* Image will cover the background */
-  background-size: cover;
-  /* Aligned the image to show the top of the tower*/
-  background-position:  100% 13%;
-  /* Scroll with the page effect reversed */
-  background-attachment: fixed;
+  background-size: cover; /* Image will cover the background */
+  background-position:  100% 13%; /* Aligned the image to show the top of the tower*/
+  background-attachment: fixed; /* Image scrolls with the page */
   display: flex;
   justify-content: flex-end;
-  /* Will define later as required    */
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: row; /* Row type rather than column type to showcase usage */
   align-items: flex-end;
 }
 
-.hero-subtitle {
+.hero-subtitle { /* Styling to the subtitle the Hero container */
   padding-bottom: 15px;
   padding-right: 15px;
- 
 }
+/* End of hero section with background */
+
+
 
 /* Start of FLEX CSS Main body code About Me*/
-
-.about-me-wrapper {
+.about-me-wrapper { /* Flex wrapper */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -152,19 +145,15 @@ footer a {
   margin-top: 50px;
 }
 
-
-.about-me-grid-container {/*CSS Grid*/
-  width: 80%;
+.about-me-grid-container {/* CSS Grid */
+  width: 80%; /* Contain the grid to a maximum of 80% of the flex wrapper */
   display: grid;
-  /* Create a 6X4 grid. */
-  grid-template-columns: 1fr repeat(3, 2fr);
-  grid-template-rows: repeat(4, 1fr);
-  /* Gap on x and y grid */
-  gap: 10px 10px; 
+  grid-template-columns: 1fr repeat(3, 2fr);  /* Create a 4X4 grid with the first column smaller than the others 3 */
+  grid-template-rows: repeat(4, 1fr); /* 4 rows of equal size */
+  gap: 10px 10px; /* Gap on x and y grid */
 }
 
-/* Target the about me text only */
-.about-me-item.about-me-title {
+.about-me-item.about-me-title { /* Cell declarations for the title of the container */
   padding-top: 0px;
   font-size: 35px;
   grid-row: 1 / span 4;
@@ -177,7 +166,6 @@ footer a {
   padding-left: 10px;
   grid-column: 2 / span 3;
   grid-row: 1 / span 2;
-  
 }
 
 .about-me-item.p2 {
@@ -185,14 +173,11 @@ footer a {
   grid-column: 2 / span 3;
   grid-row: 3 / span 2;
 }
-
 /* End of FLEX CSS Main body code About me*/
 
 
 /* Start of FLEX CSS Main body code Work projects*/
-
-.work-wrapper {
-  
+.work-wrapper { /* Flex wrapper */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -200,31 +185,14 @@ footer a {
   margin-top: 50px;
 
 }
-
-/* Create the ilussion of a brighter image once hovered */
-
-
-.work-grid-container div:hover{
-  mix-blend-mode: color-burn;
-}
-
-/* On over ghost item it will not reveal it! */
-
-.work-grid-container .work-item-project.ghost-item:hover{
-  opacity: 0;
-}
-
-
-.work-grid-container {/*CSS Grid*/
+.work-grid-container {/* CSS Grid */
   width: 80%;
   display: grid;
-  /* Create a 6X8 grid. */
-  grid-template-columns: 1fr repeat(3, 2fr);
+  /* Create a 4X8 grid. */
+  grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
   grid-template-rows: repeat(8, 1fr);
-  /* Gap on x and y grid */
-  gap: 10px 10px; 
+  gap: 10px 10px; /* Gap on x and y grid */
 }
-
 
 .work-item.work-title {
   padding-top: 10px;
@@ -235,21 +203,18 @@ footer a {
   border-right: 2px solid #333366;
 }
 
-.work-item-project.challenge-1-refactor {
+.work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
   grid-column: 2 / span 2;
   grid-row: 1 / span 6;
   background-image: url("../images/challeng-1-refactor-code.JPG");
-  background-size: cover;
+  background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
   border: .25vw solid rgba(135, 206, 250, 0.8);
-
-  
 }
-
 
 .work-item-project.run-buddy {
   grid-column: 3 /span 1;
@@ -262,9 +227,6 @@ footer a {
   padding-bottom: 15px;
   text-align: left;
   border: .25vw solid rgba(135, 206, 250, 0.8);
-
-
-
 }
 
 
@@ -281,7 +243,6 @@ footer a {
   padding-bottom: 15px;
   text-align: left;
   border: .25vw solid rgba(135, 206, 250, 0.8);
-  
 }
 
 .work-item-project.placeholder2 {
@@ -321,9 +282,7 @@ footer a {
 /* End of FLEX CSS Main body code Work projects*/
 
 /* Start of span code */
-
-/* Apply background to any span with this class name */
-.span-background {
+.span-background { /* Apply background to any span with this class name */
   background-color: lightskyblue;
   position: relative;
   line-height: 1.5;
@@ -339,10 +298,10 @@ footer a {
   margin-bottom: 20px;
 }
 
-/* Here section cool subtitle with opacity of .95 */
-/* It needs to be adjusted to avoid belending with background */
+/* Hero section cool subtitle with opacity of .95 */
+/* It needs to be adjusted to blend slighty with image selected with image selected */
 .span-background.opacity{
-  opacity: .95;
+  opacity: .95; /* Note: 1 is 0 opacity and 0 is fully transparent */
   font-size: 30px;
 }
 
@@ -351,39 +310,24 @@ footer a {
 }
 /* End of span code */
 
-
+/* Start of footer class code */
 
 /* CSS Flex/Grid Footer non-semantic Code */
-
-.footer-wrapper {
+.footer-wrapper { /* Flex container */
   display: flex;
-  /*width: 100%;*/
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
 }
 
-.footer-container {
+.footer-container { /* CSS Grid */
   width: 80%;
   display: grid;
-  /*create a 6X3 grid. */
-  grid-template-columns: 1fr repeat(3, 2fr);
-  grid-template-rows: repeat(3,2fr);
+  /*create a 4X3 grid. */
+  grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
+  grid-template-rows: repeat(3,2fr); /* 3 rows of slighty biger size as a test */
   gap: 20px 20px; 
 }
-
-/* Start of hover effects on footer */
-
-.footer-container a:hover{
-  color: lightskyblue;
-  /*REMOVED - Zoom in effect with font-size 1.5vw
-  Will revisit for next project iteration
-  font-size: 2vw;*/
-  font-weight: bold;
-  text-shadow: 0px 0px 20px lightskyblue;
-}
-
-/* End of hover effects on footer */
 
 .footer-grid-item {
   text-align: center;
@@ -399,23 +343,18 @@ footer a {
 }
 
 .footer-grid-item.phone{
-  /* Grid knows the order to put the elements if only defined on location */
+  /* Notice how all below are grid-row 2? CSS grid uses avaialble cells to allocate the element*/
   grid-row: 2;
-
 }
 
 .footer-grid-item.email{
   grid-row: 2;
-  
-
 }
 
 .footer-grid-item.git-hub{
   grid-row: 2;
-
-  
 }
-
+/* End of footer class code */
 /* End of CSS Flex/Grid Footer non-semantic Code */
 
 
