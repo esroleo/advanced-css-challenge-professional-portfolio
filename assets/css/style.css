@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
- 
+    /*font-family: Arial, Helvetica, sans-serif;*/
+
 }
 
 /* Smoth Scrolling effect */
@@ -18,17 +18,17 @@ html {
 
 body{
   background-color: lightgray;
+  /* googleapis font family Karla */
+  font-family: 'Martel', serif;
 }
 
 
 header {
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
     background-color: #404040;
-
 }
 
 header h1 {
@@ -101,9 +101,12 @@ footer a {
   color: lightskyblue;
   font-weight: bold;
   text-shadow: 0px 0px 20px lightskyblue;
-    /*Zoom in effect with font-size 2.5 vw */
-    font-size: 2.5vw;
+    /* REMOVED - Zoom in effect with font-size 2.5 vw */
+    /*Will revisit for next project iteration
+   font-size: 2.5vw;*/
     
+
+
 
     
 }
@@ -331,14 +334,14 @@ footer a {
 
 .span-background.title { /* Move away from the top/bottom container*/
   /* Match the header Nav element on the flex container elements*/
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-/* Here section cool subtitle with opacity of 1 */
+/* Here section cool subtitle with opacity of .95 */
 /* It needs to be adjusted to avoid belending with background */
 .span-background.opacity{
-  opacity: 1;
+  opacity: .95;
   font-size: 30px;
 }
 
@@ -372,8 +375,9 @@ footer a {
 
 .footer-container a:hover{
   color: lightskyblue;
-  /*Zoom in effect with font-size 1.5vw*/
-  font-size: 2vw;
+  /*REMOVED - Zoom in effect with font-size 1.5vw
+  Will revisit for next project iteration
+  font-size: 2vw;*/
   font-weight: bold;
   text-shadow: 0px 0px 20px lightskyblue;
 }
@@ -448,6 +452,8 @@ padding-left: 0px;
 }
 
 /* End of header smaller screen code chnages */
+
+
 
 /* Start of about me grid smaller screen code changes */
 .about-me-wrapper {
@@ -544,6 +550,19 @@ align-self: center;
 
 /* this will be applied on any screen smaller than 980px */
 @media screen and (max-width: 980px) {
+
+
+  
+/* Start of cool subtitle hero section update for smaller screens */
+
+.hero-subtitle {
+  padding-right: 30px;
+}
+
+.span-background.opacity{
+  font-size: 25px;
+}
+
 
 
   /* On over ghost item it will not disappear when pressed. */
