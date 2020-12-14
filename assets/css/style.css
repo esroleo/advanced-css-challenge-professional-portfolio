@@ -32,7 +32,7 @@ header nav ul {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  padding-right: 60px;
+  padding-right: 0px;
 }
 
 header nav ul li {
@@ -471,7 +471,7 @@ footer a {
   }
 
   .footer-grid-item.email{
-    grid-column: 2 span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 2;
     align-self: center;
     padding-left: 25px;
@@ -479,11 +479,11 @@ footer a {
   }
 
   .footer-grid-item.git-hub{
-    grid-column: 3 span 1;
+    grid-column: 3 / span 1;
     grid-row: 2 / span 2;
     align-self: center;
     width: 20px;
-    padding-left: 35px;
+    padding-left: 80px;
   }
   /* End of footer grid smaller screen code changes at res */
 }
@@ -499,8 +499,10 @@ footer a {
   }
 
   footer a {
-    font-size: 1.8vw;
+    font-size: 3vw;
   }
+
+
   /* End of semantic elents code changes */
 
   /* Start of class code changes */
@@ -634,6 +636,8 @@ footer a {
   margin-top: 10px;
   }
 
+
+
   /* End of footer grid smaller screen code changes at res */
 }
 
@@ -641,6 +645,7 @@ footer a {
 @media screen and  (max-width: 575px) {
   /* Start of footer grid smaller screen code changes at res */
 
+  
   /* Start of semantic elents code changes */
   header a {
     font-size: 4vw;
@@ -673,7 +678,12 @@ footer a {
     font-size: 3.5vw;
   }
 
-  .footer-grid-item.git-hub{
-    padding-right: 40px;
+  /* gap removed from the container loked centered */
+  .footer-container {
+    gap: 0px 0px;
+  }
+
+  .footer-grid-item.git-hub{ /*Final adjustments*/
+    padding-left: 30px;
   }
 }
