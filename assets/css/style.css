@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Global variable definitions */
+:root {
+  --header-footer-background-color: #404040;
+  --lightskyblue: lightskyblue;
+  --lightgray: lightgray;
+  --about-me-work-border: #333366;
+  --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+}
+
 /* Start of Semantic code */
 
 /* Smoth Scrolling effect */
@@ -18,7 +27,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  background-color: #404040;
+  background-color: var(--header-footer-background-color); 
 }
 
 header h1 {
@@ -52,14 +61,14 @@ header a {
   padding-right: 10px;
   padding-bottom: 5px;
   text-decoration: none;
-  border-bottom: 2px solid lightskyblue;
-  color: lightskyblue;
+  border-bottom: 2px solid var(--lightskyblue);
+  color: var(--lightskyblue);
 }
 /* End of header code */
 
 /* Start of body code */
 body{
-  background-color: lightgray; /* Apply background to all of the body of the page */
+  background-color: var(--lightgray); /* Apply background to all of the body of the page */
   /* googleapis font family Karla */
   font-family: 'Martel', serif;
 }
@@ -67,14 +76,15 @@ body{
 
 /* Start of footer code */
 footer {
-  background-color: #404040; /* Apply background to all of the body of the page */
-  color: lightskyblue; /* Title color */
+  /* Apply background to all of the body of the page */
+  background-color: var(--header-footer-background-color); 
+  color: var(--lightskyblue); /* Title color */
 }
 
 footer a {
   text-decoration: none;
-  border-bottom: 2px solid lightskyblue; /* Border bottom */
-  color: lightskyblue; /* anchor text color */
+  border-bottom: 2px solid var(--lightskyblue); /* Border bottom */
+  color: var(--lightskyblue); /* anchor text color */
   font-size: 1.8vw; /* View port font-size to help with responsiveness */
   font-weight: bold;
 }
@@ -85,9 +95,9 @@ footer a {
 
 /* Header nav hover */
 .nav-effects a:hover{ 
-  color: lightskyblue;
+  color: var(--lightskyblue);
   font-weight: bold;
-  text-shadow: 0px 0px 20px lightskyblue;
+  text-shadow: 0px 0px 20px var(--lightskyblue);
 }
 
 /* Work projects hover */
@@ -102,12 +112,12 @@ footer a {
 
 /* Footer hover */
 .footer-container a:hover{
-  color: lightskyblue;
+  color: var(--lightskyblue);
   /*REMOVED - Zoom in effect with font-size 1.5vw
   Will revisit for next project iteration
   font-size: 2vw;*/
   font-weight: bold;
-  text-shadow: 0px 0px 20px lightskyblue;
+  text-shadow: 0px 0px 20px var(--lightskyblue);
 }
 /* End of hover effects on multiple classes */
 
@@ -158,7 +168,7 @@ footer a {
   grid-row: 1 / span 4;
   padding-right: 10px;
   text-align: right;
-  border-right: 2px solid #333366;
+  border-right: 2px solid var(--about-me-work-border);
 }
 
 .about-me-item.p1 {
@@ -199,7 +209,7 @@ footer a {
   grid-row: 1 / span 8;
   text-align: right;
   padding-right: 10px;
-  border-right: 2px solid #333366;
+  border-right: 2px solid var(--about-me-work-border);
 }
 
 .work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
@@ -212,7 +222,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid rgba(135, 206, 250, 0.8);
+  border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.run-buddy {
@@ -225,7 +235,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid rgba(135, 206, 250, 0.8);
+  border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.placeholder1 {
@@ -240,7 +250,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid rgba(135, 206, 250, 0.8);
+  border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.placeholder2 {
@@ -254,7 +264,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid rgba(135, 206, 250, 0.8);
+  border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.placeholder3 {
@@ -268,7 +278,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid rgba(135, 206, 250, 0.8);
+  border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.ghost-item {
@@ -281,7 +291,7 @@ footer a {
 
 /* Start of span code */
 .span-background { /* Apply background to any span with this class name */
-  background-color: lightskyblue;
+  background-color: var(--lightskyblue);
   position: relative;
   line-height: 1.5;
   padding-left: 8px;
@@ -337,7 +347,7 @@ footer a {
   grid-row: 1 / span 3;
   text-align: right;
   padding-right: 10px;
-  border-right: 2px solid lightskyblue;
+  border-right: 2px solid var(--lightskyblue);
 }
 
 .footer-grid-item.phone{
@@ -409,7 +419,7 @@ footer a {
     padding-right: 0px;
     padding-bottom: 0px;
     border-right: none;
-    border-bottom: 2px solid #333366;
+    border-bottom: 2px solid var(--about-me-work-border);
   }
 
   .about-me-item.p1 {
@@ -458,8 +468,10 @@ footer a {
     text-align: center;
     padding-right: 0px;
     padding-bottom: 0px;
+    /* Border right removed*/
     border-right: none;
-    border-bottom: 2px solid lightskyblue;
+    /* Border bottom added for new grid format */
+    border-bottom: 2px solid var(--lightskyblue);
     padding-left: 25px;
   }
 
@@ -540,7 +552,7 @@ footer a {
     padding-right: 0px;
     padding-bottom: 0px;
     border-right: none;
-    border-bottom: 2px solid #333366;
+    border-bottom: 2px solid var(--about-me-work-border);
     align-self: start;
   }
 
@@ -575,7 +587,7 @@ footer a {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    border-bottom: 2px solid #333366;
+    border-bottom: 2px solid var(--about-me-work-border);
     border-right: none;
     align-self: start;
   }
