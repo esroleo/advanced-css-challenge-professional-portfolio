@@ -84,22 +84,22 @@
                         <span class="lower-text">HTML/CSS</span>
                     </span>
                 </div>
-                <div alt="Placeholder grid for projects" title="Coming soon" class="work-item-project placeholder1">
+                <div onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
                     <span class="span-background">
-                        <h3>Coming soon!</h3>
-                        <span class="lower-text">MERN Stack</span>
+                        <h3>Password Generator</h3>
+                        <span class="lower-text">CSS/Javascript</span>
                     </span>
                 </div>
-                <div alt="Placeholder grid for projects" title="Coming soon" class="work-item-project placeholder2">
+                <div onclick="projectClicked('web-api-code-quiz')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project web-api-code-quiz">
                     <span class="span-background">
-                        <h3>Coming soon!</h3>
-                        <span class="lower-text">Node/Iot</span>
+                        <h3>Web Api Code Quiz</h3>
+                        <span class="lower-text">Javascript/CSS/LocalStorage</span>
                     </span>
                 </div>
-                <div alt="Placeholder grid for projects" title="Coming soon" class="work-item-project placeholder3">
+                <div onclick="projectClicked('work-day-scheduler')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project work-day-scheduler">
                     <span class="span-background">
-                        <h3>Coming soon!</h3>
-                        <span class="lower-text">React/Javascript/CSS</span>
+                        <h3>Work Day Scheduler</h3>
+                        <span class="lower-text">Dynamic Javascript/Bootstrap</span>
                     </span>
                 </div>
                 <div class="work-item-project ghost-item">
@@ -143,9 +143,17 @@
                 window.open("https://esroleo.github.io/html-css-git-challenge1-code-refactor/");
             } else if (input == "run-buddy") {
                 window.open("https://esroleo.github.io/run-buddy/");
+            } else if (input == 'password-generator') {
+                window.open("https://esroleo.github.io/javascript-challenge-password-generator/");
+            } else if (input == 'web-api-code-quiz') {
+                window.open("https://esroleo.github.io/web-api-challenge-code-quiz/");
+            }  else if (input == 'work-day-scheduler') {
+                window.open("https://esroleo.github.io/work-day-scheduler/");
+            } else {
+                return true; /* Return true - No used as of now but semanticly correct */
             }
-            return true; /* Return true - No used as of now but semanticly correct */
-        }
+        };
+            
     </script>
 </body>
 </html>

@@ -238,11 +238,11 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.work-item-project.placeholder1 {
+.work-item-project.password-generator {
   grid-column: 2 / span 1;
   grid-row: 7 / span 2; 
   /* Royalty free image */
-  background-image: url("../images/pexels-luizclas-556665.jpg");
+  background-image: url("../images/password-generator.JPG");
   background-size: cover;
   /* Allow the background image to align */
   display: flex; /*Flex required to move the element as flex */
@@ -253,12 +253,12 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.work-item-project.placeholder2 {
+.work-item-project.web-api-code-quiz {
   grid-column: 4 / span 1;
   grid-row: 1 / span 3;
   /* Royalty free image */
-  background-image: url("../images/pexels-luizclas-556665.jpg");
-  background-size: cover;
+  background-image: url("../images/web-api-code-quiz.JPG");
+  background-size: 300px 200px, cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
   padding-left: 0px;
@@ -267,11 +267,11 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.work-item-project.placeholder3 {
+.work-item-project.work-day-scheduler {
   grid-column: 4 / span 1;
   grid-row: 4 / span 3;
   /* Royalty free image */
-  background-image: url("../images/pexels-luizclas-556665.jpg");
+  background-image: url("../images/work-day-scheduler.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -608,7 +608,7 @@ footer a {
     background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
   }
   
-  .work-item-project.placeholder1 {
+  .work-item-project.password-generator {
     grid-column: 1 /span 3;
     grid-row: 7 / span 1;
     /* By padding top from run buddy all of my grid grew in size. Allowing proper look. */
@@ -617,14 +617,14 @@ footer a {
     text-align: center;
   }
   
-  .work-item-project.placeholder2 {
+  .work-item-project.web-api-code-quiz {
     grid-column: 1 /span 3;
     grid-row: 8 / span 1;
     background-position: scroll;
     text-align: center;
   }
   
-  .work-item-project.placeholder3 {
+  .work-item-project.work-day-scheduler {
     grid-column: 1 /span 3;
     grid-row: 9 / span 1;
     background-position: scroll;
