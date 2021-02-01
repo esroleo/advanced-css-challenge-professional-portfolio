@@ -199,14 +199,14 @@ footer a {
   display: grid;
   /* Create a 4X8 grid. */
   grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   gap: 10px 10px; /* Gap on x and y grid */
 }
 
 .work-item.work-title {
   padding-top: 10px;
   font-size: 35px;
-  grid-row: 1 / span 8;
+  grid-row: 1 / span 9;
   text-align: right;
   padding-right: 10px;
   border-right: 2px solid var(--about-me-work-border);
@@ -227,7 +227,7 @@ footer a {
 
 .work-item-project.run-buddy {
   grid-column: 3 /span 1;
-  grid-row: 7 / span 2;
+  grid-row: 7 / span 3;
   background-image: url("../images/run-buddy-project.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
@@ -240,7 +240,7 @@ footer a {
 
 .work-item-project.password-generator {
   grid-column: 2 / span 1;
-  grid-row: 7 / span 2; 
+  grid-row: 7 / span 3; 
   /* Royalty free image */
   background-image: url("../images/password-generator.JPG");
   background-size: cover;
@@ -272,6 +272,19 @@ footer a {
   grid-row: 4 / span 3;
   /* Royalty free image */
   background-image: url("../images/work-day-scheduler.JPG");
+  background-size: cover;
+  display: flex; /*Flex required to move the element as flex */
+  align-items: flex-end; /*Allow text to be at center of grid*/
+  padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
+  border: .25vw solid var(--rgba-border-color-opacity);
+}
+
+.work-item-project.project01-group07 {
+  grid-column: 4 /span 1;
+  grid-row: 7 / span 3;
+  background-image: url("../images/project1-group07.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -573,7 +586,7 @@ footer a {
     /* Will assign size directly to avoid grid span */
     grid-template-columns: repeat(3, 1fr);
     /* .5fr is to fix spacing on main title item */
-    grid-template-rows: .5fr repeat(9, 1fr);
+    grid-template-rows: .5fr repeat(10, 1fr);
     /* Gap on x and y grid */
     gap: 2.5px 2.5px;
   }
@@ -630,11 +643,19 @@ footer a {
     background-position: scroll;
     text-align: center;
   }
+
+  .work-item-project.project01-group07  {
+    grid-column: 1 /span 3;
+    grid-row: 10 / span 1;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
+  }
   
   /* Ghost item made avialable at smaller screens as I android devices can click it. Ghost item is an inteional practice test */
   .work-item-project.ghost-item {
     grid-column: 1 /span 3;
-    grid-row: 10 / span 1;
+    grid-row: 11 / span 1;
     background-image: url("../images/pexels-luizclas-556665.jpg");
     background-size: cover;
     display: flex; /*Flex required to move the element as flex */
